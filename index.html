@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Web App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            background-color: #2e2e2e;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .balance {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #3b82f6;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            color: white;
+            cursor: pointer;
+        }
+        .button:active {
+            background-color: #1e40af;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://via.placeholder.com/100" alt="User Icon" style="border-radius: 50%; margin-top: 10px;">
+        <h1 id="username">Ekaterina Baranova</h1>
+        <div class="balance" id="balance">Balance: 10,678 🪙</div>
+        <button class="button" onclick="startTasks()">Complete Tasks</button>
+        <button class="button" onclick="claimDailyReward()">Daily Reward</button>
+        <button class="button" onclick="inviteFriends()">Invite Friends</button>
+    </div>
+
+    <script>
+        function startTasks() {
+            alert("Starting tasks...");
+            // Здесь будет код для выполнения задания
+        }
+
+        function claimDailyReward() {
+            alert("Daily reward claimed!");
+            // Здесь будет код для получения ежедневной награды
+        }
+
+        function inviteFriends() {
+            alert("Invite your friends!");
+            // Здесь будет код для приглашения друзей
+        }
+
+        // Telegram Web App SDK готово
+        Telegram.WebApp.ready();
+    </script>
+</body>
+</html>
